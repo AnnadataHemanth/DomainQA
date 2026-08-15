@@ -1,0 +1,55 @@
+{
+  "status": "preliminary_development_results",
+  "benchmark": {
+    "name": "DomainQA Development Benchmark",
+    "questions": 10
+  },
+  "experiments": [
+    {
+      "system": "Base LLM",
+      "model": "Qwen3-4B-Base",
+      "lexical_f1": 0.223,
+      "exact_match": 0.0
+    },
+    {
+      "system": "Dense RAG",
+      "model": "Qwen3-4B-Base",
+      "retriever": "all-MiniLM-L6-v2 + FAISS",
+      "top_k": 3,
+      "lexical_f1": 0.255,
+      "exact_match": 0.0,
+      "recall_at_1": 0.1,
+      "recall_at_3": 0.4,
+      "recall_at_5": 0.4,
+      "mrr": 0.233
+    },
+    {
+      "system": "BM25 RAG",
+      "model": "Qwen3-4B-Base",
+      "retriever": "BM25",
+      "top_k": 3,
+      "lexical_f1": 0.270,
+      "exact_match": 0.0,
+      "recall_at_1": 0.1,
+      "recall_at_3": 0.4,
+      "recall_at_5": 0.4,
+      "mrr": 0.233
+    },
+    {
+      "system": "Hybrid RAG",
+      "model": "Qwen3-4B-Base",
+      "retriever": "Dense + BM25 with Reciprocal Rank Fusion",
+      "dense_top_k": 10,
+      "bm25_top_k": 10,
+      "final_top_k": 3,
+      "rrf_k": 60,
+      "lexical_f1": 0.249,
+      "exact_match": 0.0,
+      "recall_at_1": 0.3,
+      "recall_at_3": 0.5,
+      "recall_at_5": 0.5,
+      "mrr": 0.4
+    }
+  ],
+  "note": "These results are preliminary development results from a 10-question benchmark. They are not the final research results."
+}
