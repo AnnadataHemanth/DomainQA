@@ -4,7 +4,7 @@ import json
 import re
 from pathlib import Path
 
-import fitz
+import pymupdf
 import yaml
 
 
@@ -68,7 +68,7 @@ def extract_pdf(
         )
         return
 
-    document = fitz.open(pdf_path)
+    document = pymupdf.open(pdf_path)
 
     pages = []
 
