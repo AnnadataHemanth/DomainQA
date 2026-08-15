@@ -1,0 +1,147 @@
+{
+  "model": "Qwen3-4B-Base + Dense RAG",
+  "benchmark": "DomainQA development benchmark",
+  "num_questions": 10,
+  "overall": {
+    "exact_match": 0.0,
+    "lexical_f1": 0.24168968214818115,
+    "recall_at_1": 0.1,
+    "recall_at_3": 0.4,
+    "recall_at_5": 0.4,
+    "mrr": 0.2333333333333333
+  },
+  "by_category": {
+    "factual": {
+      "count": 3,
+      "exact_match": 0.0,
+      "f1": 0.24694872724429376
+    },
+    "conceptual": {
+      "count": 3,
+      "exact_match": 0.0,
+      "f1": 0.22636260880357986
+    },
+    "comparative": {
+      "count": 2,
+      "exact_match": 0.0,
+      "f1": 0.22543792840822546
+    },
+    "reasoning": {
+      "count": 2,
+      "exact_match": 0.0,
+      "f1": 0.2730434782608696
+    }
+  },
+  "detailed": [
+    {
+      "id": "dev_001",
+      "category": "factual",
+      "exact_match": false,
+      "lexical_f1": 0.2931034482758621,
+      "gold_rank": 2,
+      "recall_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "dev_002",
+      "category": "factual",
+      "exact_match": false,
+      "lexical_f1": 0.326530612244898,
+      "gold_rank": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "dev_003",
+      "category": "conceptual",
+      "exact_match": false,
+      "lexical_f1": 0.3225806451612903,
+      "gold_rank": 1,
+      "recall_at_1": 1.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 1.0
+    },
+    {
+      "id": "dev_004",
+      "category": "conceptual",
+      "exact_match": false,
+      "lexical_f1": 0.17094017094017092,
+      "gold_rank": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "dev_005",
+      "category": "comparative",
+      "exact_match": false,
+      "lexical_f1": 0.15384615384615385,
+      "gold_rank": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "dev_006",
+      "category": "reasoning",
+      "exact_match": false,
+      "lexical_f1": 0.32608695652173914,
+      "gold_rank": 3,
+      "recall_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.3333333333333333
+    },
+    {
+      "id": "dev_007",
+      "category": "factual",
+      "exact_match": false,
+      "lexical_f1": 0.1212121212121212,
+      "gold_rank": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "dev_008",
+      "category": "conceptual",
+      "exact_match": false,
+      "lexical_f1": 0.18556701030927836,
+      "gold_rank": 2,
+      "recall_at_1": 0.0,
+      "recall_at_3": 1.0,
+      "recall_at_5": 1.0,
+      "reciprocal_rank": 0.5
+    },
+    {
+      "id": "dev_009",
+      "category": "comparative",
+      "exact_match": false,
+      "lexical_f1": 0.29702970297029707,
+      "gold_rank": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    },
+    {
+      "id": "dev_010",
+      "category": "reasoning",
+      "exact_match": false,
+      "lexical_f1": 0.22000000000000003,
+      "gold_rank": null,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "recall_at_5": 0.0,
+      "reciprocal_rank": 0.0
+    }
+  ]
+}
