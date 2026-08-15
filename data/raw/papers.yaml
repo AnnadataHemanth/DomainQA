@@ -1,0 +1,37 @@
+papers:
+
+  - id: rag_2020
+    title: "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
+    arxiv_id: "2005.11401"
+
+  - id: dpr_2020
+    title: "Dense Passage Retrieval for Open-Domain Question Answering"
+    arxiv_id: "2004.04906"
+
+  - id: lora_2021
+    title: "LoRA: Low-Rank Adaptation of Large Language Models"
+    arxiv_id: "2106.09685"
+
+  - id: qlora_2023
+    title: "QLoRA: Efficient Finetuning of Quantized LLMs"
+    arxiv_id: "2305.14314"
+
+  - id: self_rag_2023
+    title: "Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection"
+    arxiv_id: "2310.11511"
+
+  - id: raft_2024
+    title: "RAFT: Adapting Language Model to Domain Specific RAG"
+    arxiv_id: "2403.10131"
+
+  - id: rag_survey_2024
+    title: "A Survey on Retrieval-Augmented Text Generation for Large Language Models"
+    arxiv_id: "2404.10981"
+
+  - id: hallucination_survey
+    title: "A Survey on Hallucination in Large Language Models: Principles, Taxonomy, Challenges, and Open Questions"
+    arxiv_id: "2311.05232"
+
+  - id: rag_llm_survey
+    title: "A Survey on RAG Meeting LLMs: Towards Retrieval-Augmented Large Language Models"
+    arxiv_id: "2405.06211"
