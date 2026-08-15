@@ -1,0 +1,17 @@
+torch
+transformers
+datasets
+accelerate
+peft
+bitsandbytes
+sentence-transformers
+qdrant-client
+rank-bm25
+pypdf
+pandas
+numpy
+scikit-learn
+tqdm
+python-dotenv
+requests
+PyYAML

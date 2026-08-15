@@ -1,0 +1,9 @@
+{
+  "id": "benchmark_0001",
+  "question": "How does LoRA compare with full fine-tuning in terms of trainable parameters?",
+  "answer": "...",
+  "source_paper": "lora_2021",
+  "source_pages": [4, 5],
+  "category": "comparative",
+  "answerable": true
+}

@@ -1,0 +1,19 @@
+{
+  "seed": 42,
+  "total_papers": 9,
+  "train": [
+    "qlora_2023",
+    "rag_survey_2024",
+    "hallucination_survey",
+    "self_rag_2023",
+    "rag_llm_survey"
+  ],
+  "validation": [
+    "lora_2021",
+    "raft_2024"
+  ],
+  "benchmark": [
+    "rag_2020",
+    "dpr_2020"
+  ]
+}

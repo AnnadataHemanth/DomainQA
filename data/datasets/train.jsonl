@@ -1,0 +1,9 @@
+{
+  "id": "train_0001",
+  "question": "What is LoRA and why does it reduce the number of trainable parameters?",
+  "answer": "LoRA ...",
+  "source_paper": "lora_2021",
+  "source_pages": [4, 5],
+  "category": "conceptual",
+  "answerable": true
+}

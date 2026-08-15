@@ -1,0 +1,45 @@
+project:
+  name: DomainQA
+  domain: "AI and Machine Learning Scientific Literature"
+
+corpus:
+  target_papers: 30
+  min_papers: 20
+
+  topics:
+    - retrieval augmented generation
+    - dense retrieval
+    - question answering
+    - fine tuning
+    - parameter efficient fine tuning
+    - LoRA
+    - QLoRA
+    - hallucination
+    - retrieval augmented fine tuning
+    - LLM evaluation
+
+splits:
+  train: 0.70
+  validation: 0.15
+  benchmark: 0.15
+
+benchmark:
+  total_target: 400
+
+  categories:
+    factual: 80
+    conceptual: 80
+    comparative: 80
+    multi_hop: 60
+    reasoning: 60
+    unanswerable: 40
+
+retrieval:
+  top_k: 5
+
+  chunking:
+    chunk_size: 800
+    chunk_overlap: 120
+
+embeddings:
+  model: "sentence-transformers/all-MiniLM-L6-v2"
