@@ -1,0 +1,31 @@
+{
+  "model": "Qwen3-4B-Base",
+  "benchmark": "DomainQA development benchmark",
+  "num_questions": 10,
+  "overall": {
+    "exact_match": 0.0,
+    "lexical_f1": 0.22296909863048278
+  },
+  "by_category": {
+    "factual": {
+      "count": 3,
+      "exact_match": 0.0,
+      "f1": 0.22739938080495356
+    },
+    "conceptual": {
+      "count": 3,
+      "exact_match": 0.0,
+      "f1": 0.21279537456008044
+    },
+    "comparative": {
+      "count": 2,
+      "exact_match": 0.0,
+      "f1": 0.24230503795721187
+    },
+    "reasoning": {
+      "count": 2,
+      "exact_match": 0.0,
+      "f1": 0.212248322147651
+    }
+  }
+}

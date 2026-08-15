@@ -1,0 +1,11 @@
+{
+  "model": "Qwen/Qwen3-4B-Base",
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dense_top_k": 10,
+  "bm25_top_k": 10,
+  "final_top_k": 3,
+  "rrf_k": 60,
+  "max_new_tokens": 160,
+  "max_context_chars_per_chunk": 2500,
+  "benchmark": "/content/DomainQA/data/datasets/benchmark_dev.jsonl"
+}
