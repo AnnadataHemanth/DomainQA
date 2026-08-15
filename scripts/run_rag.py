@@ -13,7 +13,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 
 BENCHMARK_PATH = PROJECT_ROOT / "data" / "datasets" / "benchmark_dev.jsonl"
-
 INDEX_PATH = PROJECT_ROOT / "data" / "rag" / "dense.index"
 METADATA_PATH = PROJECT_ROOT / "data" / "rag" / "metadata.json"
 
@@ -174,21 +173,10 @@ def main():
                 metadata,
             )
 
-            for result in retrieved:
-                print(
-                    f"  {result['chunk_id']} "
-                    f"score={result['score']:.4f}"
-                )
-
-            prompt = build_prompt(
-                question,
-                retrieved,
-            )
-
             answer = generate_answer(
                 tokenizer,
                 model,
-                prompt,
+                build_prompt(question, retrieved),
             )
 
             result = {
@@ -199,17 +187,13 @@ def main():
                 "category": record["category"],
                 "answerable": record["answerable"],
                 "source_paper": record["source_paper"],
+                "source_chunk": record["source_chunk"],
                 "retrieved_chunks": retrieved,
             }
 
             output_file.write(
-                json.dumps(
-                    result,
-                    ensure_ascii=False,
-                )
-                + "\n"
+                json.dumps(result, ensure_ascii=False) + "\n"
             )
-
             output_file.flush()
 
             print(f"Answer: {answer}")
